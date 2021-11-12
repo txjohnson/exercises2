@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<style type="text/css">
+#show {
+    border: 1px solid #CCCCCC;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px; 
+}
+</style> 
+</head>
+<body>
+<p>Below should show the results of your javascript code.</p>
+<div id="show">change this using code</div>
+<script>
+/* Fix the conditional. Change ?s to the correct operator so that when x is more than 45, action is changed to "slow down",
+   otherwise the action is set to "speed up"
+*/
+let x = 30;
+let action = "";
+
+if (x ? 45) {
+    action = "slow down";
+} ? {
+    action = "speed up"
+}
+
+/* don't change anything below */
+document.getElementById("show").innerText = action;
+</script>
+</body>
